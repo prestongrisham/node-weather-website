@@ -14,7 +14,7 @@ const forecast = (long, lat, callback) => {
 		}else {			  
 			//console.log(body.request.query)	  
 			//console.log("Currently in " + body.location.name + " it is " + body.current.weather_descriptions[0] + " and " + body.current.temperature + " and feels like " + body.current.feelslike)
-			callback(undefined, "Currently in " + body.location.name + " it is " + body.current.weather_descriptions[0] + " and " + body.current.temperature + " and feels like " + body.current.feelslike)
+			callback(undefined, "Currently in " + body.location.name + " it is " + body.current.weather_descriptions[0] + " and " + body.current.temperature + " and feels like " + body.current.feelslike + ". The current humidity is " + body.current.humidity + "%")
 		}
 	})
 }
